@@ -67,9 +67,15 @@ body{
 }
 
 .links li a{
+    display: inline-block;
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.links li a:hover{
+    transform: scale(1.08);
 }
 
 .links li:nth-child(1) a{
@@ -97,6 +103,13 @@ body{
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover{
+    background-color: var(--sky-blue);
+    box-shadow: 0px 0px 28.3px 0.7px rgba(0,0,0,0.2);
+    transform: scale(1.05);
 }
 
 /* Hero Section */
@@ -139,6 +152,14 @@ body{
     font-weight: 700;
     padding: 10px 45px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.enroll-btn:hover{
+    background-color: var(--sky-blue);
+    color: white;
+    box-shadow: 0px 0px 28.3px 0.7px rgba(0,0,0,0.2);
+    transform: scale(1.05);
 }
 
 .banner-text{
@@ -158,6 +179,20 @@ body{
 }
 
 /* Curriculum Section */
+
+/* Marquee */
+
+.section-container marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--sky-blue);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* ------ */
 
 .curriculum{
     background-image: url('../assets/bg.png');
@@ -203,6 +238,11 @@ body{
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.card a:hover{
+    transform: scale(1.08);
 }
 
 .card-1 a{
@@ -256,11 +296,19 @@ body{
     background-color: var(--orange);
     color: white;
     font-size: 1.25rem;
-    padding: 13px 18px;
+    padding: 13px 19px;
     border: none;
     border-radius: 50%;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.angle-btn:hover{
+    background-color: var(--sky-blue);
+    color: white;
+    box-shadow: 0px 0px 28.3px 0.7px rgba(0,0,0,0.2);
+    transform: scale(1.05);
 }
 
 /* Stories Section */
@@ -278,7 +326,6 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
-    overflow: hidden;
 }
 
 .view-all-btn{
@@ -290,6 +337,14 @@ body{
     font-weight: 700;
     padding: 10px 45px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-all-btn:hover{
+    background-color: var(--sky-blue);
+    color: white;
+    box-shadow: 0px 0px 28.3px 0.7px rgba(0,0,0,0.2);
+    transform: scale(1.05);
 }
 
 .stories-card-container{
@@ -302,7 +357,35 @@ body{
     background-color: white;
     border: none;
     border-radius: 16px;
+    position: relative;
 }
+
+/* Date Badge */
+
+.date-badge{
+    position: absolute;
+    top: 56%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: #95B226;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.st-card3 .date-badge{
+    background-color: #5D58F0;
+}
+
+.st-card1 .date-badge{
+    background-color: #3CD8E8;
+    top: 61%;
+    left: 20%;
+}
+
+/* ---------- */
 
 .s-card img{
     border-top-left-radius: 16px;
@@ -391,6 +474,10 @@ footer{
     color: white;
 }
 
+.footer-links li a:hover{
+    color: black;
+}
+
 .footer-links li{
     margin-bottom: 10px;
 }
@@ -406,6 +493,12 @@ footer{
 .social-container{
     display: flex;
     gap: 8px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.social-container img:hover{
+    transform: scale(1.13);
 }
 
 .social-text{
@@ -448,7 +541,9 @@ footer{
     }
 
     .navbar{
-        padding: 0 17px;
+        margin: 0px 0px;
+        padding: 12px 16px;
+        border: 0.5px solid rgb(254, 163, 1);
     }
 
     .banner-container{
@@ -502,5 +597,35 @@ footer{
         padding: 0 14px;
         margin-top: 65px;
         margin-bottom: 60px;
+    }
+
+    /* Misc */
+
+    .marquee-container{
+        margin: 0px;
+        margin-left: 10px;
+    }
+
+    .date-badge{
+        top: 52%;
+        left: 45%;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        padding: 6px 15px;
+    }
+
+    .st-card4 .date-badge{
+        top: 47%;
+        left: 45%;
+    }
+
+    .st-card5 .date-badge{
+        top: 47%;
+        left: 45%;
+    }
+
+    .section-container .section-text{
+        margin-top: 0px;
+        margin-bottom: 48px;
     }
 }
