@@ -234,6 +234,10 @@ body{
     text-align: center;
 }
 
+.card img{
+    width: 100%;
+}
+
 .card a{
     font-size: 1rem;
     font-weight: 700;
